@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Álbum — Maracuyá 💛 & Chicha Morada 💜</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-content">
+      <h1>💜 Feliz San Valentín mi Chicha Morada 💜</h1>
+      <div class="loader-hearts">💜 💛 💜 💛 💜</div>
+      <div class="osos">🧸💜🧸💛🧸</div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div id="corazones-container"></div>
+
+    <!-- PORTADA -->
+    <header class="portada" id="portada">
+      <h1>💜💛 Tiempo Justos 💜 <span class="corazon-amarillo">💛</span></h1>
+
+      <div class="contadores">
+        <div class="contador-block">
+          <h3>Como enamorados</h3>
+          <div id="contador-enamorados" class="contador-value"></div>
+        </div>
+
+        <div class="contador-block">
+          <h3>Como esposos</h3>
+          <div id="contador-esposos" class="contador-value">Por definir</div>
+          <button id="btn-boda" class="btn-audio">dale click amor ❤️</button>
+        </div>
+      </div>
+
+      <div class="btn-area">
+        <button id="verFotos" class="btn-enter">
+          Fotos con mi <span class="chicha">Chicha Morada</span> 💜
+        </button>
+      </div>
+    </header>
+
+    <!-- GALERÍA NORMAL -->
+    <main id="album" class="album oculto">
+      <button class="btn-volver" id="volver-normal">💜 Regresar al menú</button>
+
+      <img src="img/10.jpg" class="decor decor-left">
+      <img src="img/11.jpg" class="decor decor-right">
+
+      <section id="grid" class="grid">
+
+        <div class="item" data-descripcion="Momentos juntos" data-audio="amor.mp3">
+          <div class="item-contenido"><img src="img/1.jpg"></div>
+        </div>
+
+        <div class="item" data-descripcion="Lunes contigo" data-audio="lunes.mp3">
+          <div class="item-contenido"><img src="img/2.jpg"></div>
+        </div>
+
+        <div class="item" data-descripcion="Aurora" data-audio="auroa.mp3">
+          <div class="item-contenido"><img src="img/3.jpg"></div>
+        </div>
+
+        <div class="item" data-descripcion="Me enamoro" data-audio="me enamoro.mp3">
+          <div class="item-contenido"><img src="img/4.jpg"></div>
+        </div>
+
+        <div class="item" data-descripcion="Ladrona" data-audio="ladrona.mp3">
+          <div class="item-contenido"><img src="img/5.jpg"></div>
+        </div>
+
+        <div class="item" data-descripcion="Collar" data-audio="collar.mp3">
+          <div class="item-contenido"><img src="img/6.jpg"></div>
+        </div>
+
+        <div class="item" data-descripcion="Foto 7" data-audio="7.mp3">
+          <div class="item-contenido"><img src="img/7.jpg"></div>
+        </div>
+
+        <div class="item" data-descripcion="Foto 8" data-audio="8.mp3">
+          <div class="item-contenido"><img src="img/8.jpg"></div>
+        </div>
+
+        <div class="item" data-descripcion="Foto 9" data-audio="9.mp3">
+          <div class="item-contenido"><img src="img/9.jpg"></div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- GALERÍA BODA -->
+    <main id="album-boda" class="album oculto">
+      <button class="btn-volver" id="volver-boda">💜 Regresar al menú</button>
+
+      <section class="grid">
+        <div class="item"><div class="item-contenido"><img src="boda/boda%201.jpeg"></div></div>
+        <div class="item"><div class="item-contenido"><img src="boda/boda%202.jpeg"></div></div>
+        <div class="item"><div class="item-contenido"><img src="boda/boda%203.jpeg"></div></div>
+        <div class="item"><div class="item-contenido"><img src="boda/boda%204.jpeg"></div></div>
+      </section>
+    </main>
+
+    <!-- VISOR -->
+    <div id="suponer" class="suponer">
+      <div class="contenedor-img">
+        <button id="btn-cerrar" class="btn-cerrar">✖</button>
+        <img id="suponer-img">
+        <p id="suponer-desc" class="descripcion"></p>
+      </div>
+    </div>
+
+    <footer class="pie">
+      <p>💛 Hecho con amor por Maracuyá para su Chicha Morada 💜</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
